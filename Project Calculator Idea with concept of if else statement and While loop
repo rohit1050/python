@@ -1,0 +1,39 @@
+// Krishna is working on the project Calculator idea that will cover all the basic concept regarding
+if else statement and while loop. The Calculator will start by asking what the user want to do
+addition , multiplication subtraction and division.
+
+Based on above module the script will either add, sub, mul, div the numbers that are entered. Once
+Operation is completed it should ask the user its choice. If the user choose exit the program will
+stop //
+
+
+a=int(input("enter the a value:\n"))
+b=int(input("enter the value of b:\n"))
+choice=input("enter the your choice for operation\n")
+while True:
+    if choice=="add":
+        print(a+b)
+        if choice=="stop":
+            break
+        else:
+            choice=input("enter the your choice for operation\n")
+    elif choice=="sub":
+        print(a-b)
+        if choice == "stop":
+            break
+        else:
+            choice = input("enter the your choice for operation\n")
+    elif choice=="mul":
+        print(a*b)
+        if choice == "stop":
+            break
+        else:
+            choice = input("enter the your choice for operation\n")
+    elif choice=="div":
+        print(a//b)
+        if choice == "stop":
+            break
+        else:
+            choice = input("enter the your choice for operation\n")
+    elif choice=="exit":
+        break
